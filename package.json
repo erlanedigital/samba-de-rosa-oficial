@@ -1,17 +1,18 @@
 {
-  "name": "samba-de-rosa-oficial",
+  "name": "samba-de-rosa-worker",
   "version": "1.0.0",
-  "description": "Samba de Rosa Oficial — Montes Claros / MG | A Força Feminina do Samba Mineiro",
+  "description": "Cloudflare Worker com Static Assets — Samba de Rosa Oficial (Montes Claros / MG)",
+  "main": "src/worker.js",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
   "keywords": [
+    "cloudflare-worker",
     "samba-de-rosa",
     "montes-claros",
-    "samba-feminino",
-    "samba-de-raiz",
-    "pagode",
-    "mpb"
+    "samba-feminino"
   ],
   "author": "Samba de Rosa Oficial",
   "license": "ISC"

@@ -1,6 +1,12 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "sambaderosa",
-  "pages_build_output_dir": "dist",
-  "compatibility_date": "2026-10-29"
+  "name": "samba-de-rosa-worker",
+  "main": "src/worker.js",
+  "compatibility_date": "2024-12-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "account_id": "70e3fc58702bc811a46ea3462de5a906",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  }
 }
