@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2A85"/>
+      <stop offset="50%" stop-color="#E11D48"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <radialGradient id="bloomGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF1F2"/>
+      <stop offset="100%" stop-color="#FF2A85"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0D090D"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="url(#roseGrad)" stroke-width="2" stroke-opacity="0.6"/>
+  <!-- Musical note & rose petaled element -->
+  <path d="M26 44 A6 6 0 1 1 20 38 A6 6 0 0 1 26 44 Z" fill="url(#roseGrad)"/>
+  <path d="M46 38 A6 6 0 1 1 40 32 A6 6 0 0 1 46 38 Z" fill="url(#roseGrad)"/>
+  <path d="M26 44 V20 C26 18 28 16 30 16 H44 C45.5 16 46 17 46 18.5 V38" stroke="url(#roseGrad)" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M26 25 H46" stroke="url(#roseGrad)" stroke-width="3"/>
+  <!-- Rose blossom spark -->
+  <circle cx="35" cy="20" r="3" fill="#FBBF24"/>
+</svg>
