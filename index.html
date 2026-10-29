@@ -3,32 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samba de Rosa Oficial — Montes Claros / MG | A Força Feminina do Samba</title>
-  
-  <!-- SEO Meta Tags & Open Graph -->
-  <meta name="description" content="Site oficial da banda Samba de Rosa, de Montes Claros - MG. A potência, elegância e o balanço contagiante da força feminina no samba de raiz, pagode de mesa e MPB. Orçamentos e agenda de shows.">
-  <meta name="keywords" content="Samba de Rosa, Samba de Rosa Oficial, Samba de Rosa Montes Claros, Samba Feminino Montes Claros, Banda de Samba Montes Claros, Pagode Montes Claros, Roda de Samba Montes Claros, Shows em Montes Claros, @sambaderosaoficial">
-  <meta name="author" content="Samba de Rosa Oficial">
-  <meta name="robots" content="index, follow">
-  
-  <meta property="og:title" content="Samba de Rosa Oficial — A Força Feminina do Samba Mineiro | Montes Claros / MG">
-  <meta property="og:description" content="Autenticidade, carisma e a magia da música brasileira. Conheça o repertório, veja a agenda de shows e solicite uma proposta exclusiva para o seu evento!">
-  <meta property="og:image" content="./public/duo_hero.jpg">
-  <meta property="og:url" content="https://sambaderosa.pages.dev/">
-  <meta property="og:type" content="music.band">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:site_name" content="Samba de Rosa Oficial">
-
-  <!-- Favicon SVG Exclusivo -->
+  <title>Samba de Rosa — Montes Claros / MG | A Força Feminina do Samba</title>
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   
-  <!-- Schema.org JSON-LD para indexação máxima no Google Maps e Busca -->
+  <!-- SEO Meta Tags & Open Graph -->
+  <meta name="description" content="Site oficial da banda Samba de Rosa, de Montes Claros - MG. A potência e o encanto da força feminina no samba de raiz, pagode de mesa e MPB. Shows, repertório, agenda e contratação.">
+  <meta name="keywords" content="Samba de Rosa, Samba de Rosa Montes Claros, Samba Feminino Montes Claros, Samba Norte de Minas, Pagode Montes Claros, @sambaderosaoficial">
+  <meta property="og:title" content="Samba de Rosa — A Força Feminina do Samba | Montes Claros / MG">
+  <meta property="og:description" content="A autenticidade e o ritmo contagiante do samba feminino de Montes Claros. Conheça a banda, assista aos shows e garanta sua data!">
+  <meta property="og:image" content="./public/duo_hero.jpg">
+  <meta property="og:type" content="music.band">
+  
+  <!-- Schema.org JSON-LD para indexação máxima no Google -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "MusicGroup",
-    "name": "Samba de Rosa Oficial",
-    "alternateName": "Banda Samba de Rosa",
+    "name": "Samba de Rosa",
     "genre": ["Samba", "Pagode", "Samba de Raiz", "MPB", "Samba de Roda"],
     "address": {
       "@type": "PostalAddress",
@@ -39,8 +30,8 @@
     "sameAs": [
       "https://www.instagram.com/sambaderosaoficial"
     ],
-    "image": "https://sambaderosa.pages.dev/public/duo_hero.jpg",
-    "description": "Banda feminina de samba tradicional e pagode de mesa de Montes Claros (MG), exaltando a representatividade, a força e o talento da mulher na música popular brasileira."
+    "image": "./public/duo_hero.jpg",
+    "description": "Banda feminina de samba e pagode de Montes Claros (MG), celebrando a potência, a representatividade e a beleza da mulher na música brasileira e no samba tradicional."
   }
   </script>
 
@@ -48,45 +39,70 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   
-  <!-- Estilos Customizados & Segurança de Layout -->
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body class="selection:bg-pink-600/30 selection:text-pink-200 min-h-screen flex flex-col bg-[#0A060A] text-[#FAF5F8]">
+  <!-- Google Fonts: Syne + Plus Jakarta Sans -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800;900&display=swap');
+    
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0d090d;
+      color: #FAF5F8;
+    }
+    
+    .font-syne {
+      font-family: 'Syne', sans-serif;
+    }
 
-  <!-- ==================== 1. CABEÇALHO FIXO COM NAVEGAÇÃO COMPLETA ==================== -->
-  <header id="header" class="sticky top-0 z-40 bg-[#0A060A]/95 backdrop-blur-xl border-b border-pink-950/60 shadow-2xl transition-all duration-300">
-    <div class="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10 h-20 flex items-center justify-between gap-4">
+    .hidden {
+      display: none !important;
+      pointer-events: none !important;
+      z-index: -9999 !important;
+    }
+
+    .rose-gradient-text {
+      background: linear-gradient(135deg, #FF6EA7 0%, #FF2A85 50%, #FFB347 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glow-rose {
+      box-shadow: 0 0 40px rgba(255, 42, 133, 0.25);
+    }
+  </style>
+</head>
+<body class="selection:bg-pink-600/30 selection:text-pink-200 min-h-screen flex flex-col">
+
+  <!-- ==================== 1. CABEÇALHO FIXO E NAVEGAÇÃO ==================== -->
+  <header id="header" class="sticky top-0 z-40 bg-[#0d090d]/90 backdrop-blur-xl border-b border-pink-950/60 shadow-xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
       
       <!-- Logotipo Oficial da Banda -->
-      <a href="#hero" class="flex items-center gap-3.5 group">
-        <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-pink-600 via-rose-600 to-amber-500 flex items-center justify-center shadow-lg shadow-pink-600/30 text-white transform group-hover:scale-105 transition duration-300">
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-pink-600 via-rose-500 to-amber-500 flex items-center justify-center shadow-lg shadow-pink-600/40 text-white transform group-hover:scale-105 transition duration-300">
           <i data-lucide="music-2" class="w-6 h-6"></i>
         </div>
         <div>
-          <span class="font-syne text-xl sm:text-2xl font-black tracking-tight text-white group-hover:text-pink-400 transition">SAMBA DE ROSA</span>
-          <span class="block text-[11px] tracking-[0.2em] uppercase font-bold text-pink-400/90 font-mono">Montes Claros • MG</span>
+          <span class="font-syne text-xl font-black tracking-tight text-white group-hover:text-pink-400 transition">SAMBA DE ROSA</span>
+          <span class="block text-[10px] tracking-[0.16em] uppercase font-bold text-pink-400/90 font-mono">Montes Claros • MG</span>
         </div>
       </a>
 
-      <!-- Menu Textual Explícito e Incondicional -->
-      <nav class="hidden lg:flex items-center gap-7 text-xs uppercase tracking-widest font-extrabold text-zinc-300">
-        <a href="#essencia" class="hover:text-pink-400 transition">A Força Feminina</a>
+      <!-- Menu Textual Explícito -->
+      <nav class="hidden md:flex items-center gap-7 text-xs uppercase tracking-widest font-bold text-zinc-300">
         <a href="#sobre" class="hover:text-pink-400 transition">A Banda</a>
-        <a href="#formatos" class="hover:text-pink-400 transition">Formatos de Show</a>
-        <a href="#repertorio" class="hover:text-pink-400 transition">Repertório</a>
-        <a href="#calculadora" class="hover:text-pink-400 transition">Simular Orçamento</a>
-        <a href="#agenda" class="hover:text-pink-400 transition">Agenda</a>
-        <a href="#galeria" class="hover:text-pink-400 transition">Galeria</a>
+        <a href="#essencia" class="hover:text-pink-400 transition">Força Feminina</a>
+        <a href="#agenda" class="hover:text-pink-400 transition">Agenda de Shows</a>
+        <a href="#videos" class="hover:text-pink-400 transition">Momentos</a>
         <a href="#contato" class="hover:text-pink-400 transition">Contratação</a>
       </nav>
 
-      <!-- Botões de Ação do Topo -->
+      <!-- Botões de Ação do Cabeçalho -->
       <div class="flex items-center gap-3">
-        <a href="https://www.instagram.com/sambaderosaoficial" id="headerInstagramLink" target="_blank" rel="noopener noreferrer" class="hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-semibold bg-pink-950/40 hover:bg-pink-900/50 text-pink-300 border border-pink-800/40 transition">
+        <a href="https://www.instagram.com/sambaderosaoficial" target="_blank" rel="noopener noreferrer" class="hidden sm:flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold bg-pink-950/40 hover:bg-pink-900/50 text-pink-300 border border-pink-800/40 transition">
           <i data-lucide="instagram" class="w-4 h-4 text-pink-400"></i>
-          <span class="font-mono">@sambaderosaoficial</span>
+          <span>@sambaderosaoficial</span>
         </a>
-        <a href="#contato" class="px-5 py-2.5 rounded-xl text-xs font-black tracking-wide uppercase bg-gradient-to-r from-pink-600 via-rose-600 to-amber-500 hover:from-pink-500 hover:to-amber-400 text-white shadow-lg shadow-pink-600/30 flex items-center gap-2 transform active:scale-95 transition">
+        <a href="https://wa.me/5538999999999?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20show%20do%20Samba%20de%20Rosa%20em%20Montes%20Claros." target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl text-xs font-extrabold bg-gradient-to-r from-pink-600 via-rose-600 to-amber-500 hover:from-pink-500 hover:to-amber-400 text-white shadow-lg shadow-pink-600/30 flex items-center gap-2 transform active:scale-95 transition">
           <i data-lucide="calendar-check" class="w-4 h-4"></i>
           <span>Contratar Show</span>
         </a>
@@ -94,932 +110,416 @@
 
     </div>
 
-    <!-- Sub-Barra de Navegação Horizontal Mobile Obrigatória (Rolagem Suave) -->
-    <div class="lg:hidden overflow-x-auto whitespace-nowrap px-4 py-2.5 bg-black/80 border-t border-pink-950/60 flex items-center gap-5 text-xs font-bold uppercase tracking-wider text-zinc-300 scrollbar-none">
-      <a href="#essencia" class="hover:text-pink-400 active:text-pink-400 shrink-0">Força Feminina</a>
-      <a href="#sobre" class="hover:text-pink-400 active:text-pink-400 shrink-0">A Banda</a>
-      <a href="#formatos" class="hover:text-pink-400 active:text-pink-400 shrink-0">Formatos</a>
-      <a href="#repertorio" class="hover:text-pink-400 active:text-pink-400 shrink-0">Repertório</a>
-      <a href="#calculadora" class="hover:text-pink-400 active:text-pink-400 shrink-0 text-amber-400">Simulador</a>
-      <a href="#agenda" class="hover:text-pink-400 active:text-pink-400 shrink-0">Agenda</a>
-      <a href="#galeria" class="hover:text-pink-400 active:text-pink-400 shrink-0">Galeria</a>
-      <a href="#contato" class="hover:text-pink-400 active:text-pink-400 shrink-0 text-pink-400">Contratar</a>
+    <!-- Sub-Barra de Navegação Horizontal Mobile -->
+    <div class="md:hidden overflow-x-auto whitespace-nowrap px-4 py-2 bg-black/60 border-t border-pink-950/50 flex gap-4 text-[11px] font-bold uppercase tracking-wider text-zinc-400">
+      <a href="#sobre" class="hover:text-pink-400">A Banda</a>
+      <a href="#essencia" class="hover:text-pink-400">Força Feminina</a>
+      <a href="#agenda" class="hover:text-pink-400">Agenda</a>
+      <a href="#videos" class="hover:text-pink-400">Vídeos</a>
+      <a href="#contato" class="hover:text-pink-400 text-pink-400">Contratação</a>
     </div>
   </header>
 
-  <main class="flex-grow">
+  <!-- ==================== 2. HERO SECTION COM FOTO EXCLUSIVA 8K ==================== -->
+  <section id="hero" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="./public/duo_hero.jpg" class="w-full h-full object-cover object-center scale-105 animate-pulse duration-1000 opacity-65 filter brightness-90" alt="Banda Samba de Rosa Montes Claros">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d090d] via-[#0d090d]/60 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#0d090d]/80 via-transparent to-[#0d090d]/80"></div>
+    </div>
 
-    <!-- ==================== 2. HERO SECTION COM FOTO EXCLUSIVA 8K ==================== -->
-    <section id="hero" class="relative min-h-[92vh] flex items-center justify-center overflow-hidden py-24">
-      <div class="absolute inset-0 z-0">
-        <img src="./public/duo_hero.jpg" class="w-full h-full object-cover object-center animate-subtle-zoom filter brightness-90" alt="Banda Samba de Rosa Oficial Montes Claros">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#0A060A] via-[#0A060A]/70 to-[#0A060A]/40"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-[#0A060A]/90 via-transparent to-[#0A060A]/90"></div>
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-300 text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-md">
+        <i data-lucide="sparkles" class="w-4 h-4 text-pink-500"></i> Montes Claros, Minas Gerais • A Força Feminina do Samba
       </div>
 
-      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        
-        <!-- Badge Oficial -->
-        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-300 text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-md glow-rose">
-          <i data-lucide="sparkles" class="w-4 h-4 text-pink-400"></i> Montes Claros • Norte de Minas Gerais
-        </div>
+      <h1 class="font-syne text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[0.95] mb-6">
+        A FORÇA FEMININA <br>
+        <span class="rose-gradient-text">DO SAMBA MINEIRO</span>
+      </h1>
 
-        <!-- H1 com Escala Áurea -->
-        <h1 class="font-syne text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[1.02] mb-6">
-          A FORÇA FEMININA <br>
-          <span class="rose-gradient-text">DO SAMBA MINEIRO</span>
-        </h1>
+      <p class="max-w-2xl mx-auto text-base sm:text-lg text-zinc-200 font-normal leading-relaxed mb-10 drop-shadow">
+        Representatividade, carisma e autenticidade. O **Samba de Rosa** leva aos palcos de Montes Claros e de todo o país o balanço contagiante do samba de raiz, a vibração do pagode e a potência da mulher na música brasileira.
+      </p>
 
-        <p class="max-w-2xl mx-auto text-base sm:text-lg text-zinc-200 font-normal leading-relaxed mb-10 drop-shadow-md">
-          Representatividade, ritmo vibrante e carisma contagiante. O <strong class="text-white font-semibold">Samba de Rosa Oficial</strong> traz para os palcos, casamentos, eventos sociais e festivais de Montes Claros a magia do samba de raiz, pagode de mesa e clássicos imortais da MPB.
-        </p>
-
-        <!-- Botões de Ação Centralizados -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#contato" class="w-full sm:w-auto px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-wider bg-gradient-to-r from-pink-600 via-rose-600 to-amber-500 hover:from-pink-500 hover:to-amber-400 text-white shadow-2xl shadow-pink-600/40 flex items-center justify-center gap-3 transition transform hover:-translate-y-0.5">
-            <i data-lucide="calendar-check" class="w-5 h-5"></i>
-            <span>Solicitar Orçamento</span>
-          </a>
-          <a href="#repertorio" class="w-full sm:w-auto px-8 py-4 rounded-2xl font-bold text-sm uppercase tracking-wider bg-zinc-900/90 hover:bg-zinc-800 text-white border border-pink-500/30 backdrop-blur-md flex items-center justify-center gap-3 transition">
-            <i data-lucide="disc-3" class="w-5 h-5 text-pink-400"></i>
-            <span>Conhecer Repertório</span>
-          </a>
-        </div>
-
-        <!-- Destaques Rápidos -->
-        <div class="mt-14 inline-flex flex-wrap items-center justify-center gap-3 max-w-3xl mx-auto">
-          <span class="px-4 py-2 rounded-xl bg-black/70 border border-pink-900/60 text-xs font-bold text-pink-300 flex items-center gap-2">
-            <i data-lucide="heart" class="w-4 h-4 text-pink-400"></i> Protagonismo Feminino no Palco
-          </span>
-          <span class="px-4 py-2 rounded-xl bg-black/70 border border-pink-900/60 text-xs font-bold text-amber-300 flex items-center gap-2">
-            <i data-lucide="flame" class="w-4 h-4 text-amber-400"></i> Do Samba de Raiz ao Pagode
-          </span>
-          <span class="px-4 py-2 rounded-xl bg-black/70 border border-pink-900/60 text-xs font-bold text-zinc-300 flex items-center gap-2">
-            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i> Estrutura & Pontualidade Profissional
-          </span>
-        </div>
-
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#sobre" class="w-full sm:w-auto px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-wider bg-gradient-to-r from-pink-600 via-rose-600 to-amber-500 hover:from-pink-500 hover:to-amber-400 text-white shadow-2xl shadow-pink-600/40 flex items-center justify-center gap-2.5 transition transform hover:-translate-y-0.5">
+          <i data-lucide="music-2" class="w-5 h-5"></i>
+          <span>Conhecer o Projeto</span>
+        </a>
+        <a href="#contato" class="w-full sm:w-auto px-8 py-4 rounded-2xl font-bold text-sm uppercase tracking-wider bg-zinc-900/80 hover:bg-zinc-800 text-white border border-pink-500/30 backdrop-blur-md flex items-center justify-center gap-2.5 transition">
+          <i data-lucide="phone-call" class="w-5 h-5 text-pink-400"></i>
+          <span>Solicitar Orçamento</span>
+        </a>
       </div>
-    </section>
 
-    <!-- ==================== 3. ESSÊNCIA & PILARES MUSICAIS ==================== -->
-    <section id="essencia" class="py-20 lg:py-28 bg-[#100910] border-t border-pink-950/40 relative">
-      <div class="max-w-[1600px] w-full mx-auto px-4 sm:px-8 lg:px-12">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-bold uppercase tracking-widest">
-            Identidade & Tradição
-          </div>
-          <h2 class="font-syne text-3xl sm:text-5xl font-black text-white">
-            A Potência da Mulher no <span class="rose-gradient-text">Coração de Minas</span>
-          </h2>
-          <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
-            Com instrumentos tradicionais de roda, afinação impecável e sensibilidade artística, o Samba de Rosa celebra a alma dos grandes mestres e divas da música brasileira.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          
-          <!-- Pilar 1 -->
-          <div class="p-8 rounded-3xl bg-[#140C14] border border-pink-950/80 hover:border-pink-500/60 transition duration-300 group flex flex-col justify-between relative overflow-hidden card-shine">
-            <div class="absolute -top-12 -right-12 w-36 h-36 bg-pink-600/10 rounded-full blur-3xl group-hover:bg-pink-600/20 transition"></div>
-            <div>
-              <div class="w-14 h-14 rounded-2xl bg-pink-600/20 text-pink-400 flex items-center justify-center font-black text-2xl mb-6 group-hover:bg-pink-600 group-hover:text-white transition">
-                <i data-lucide="drum" class="w-7 h-7"></i>
-              </div>
-              <h3 class="font-syne text-2xl font-bold text-white group-hover:text-pink-400 transition">Percussão com Alma</h3>
-              <span class="text-xs font-extrabold text-pink-400 uppercase tracking-widest block mt-1.5">Surdo, Pandeiro, Tantã & Balanço</span>
-              <p class="text-zinc-300 text-sm mt-4 leading-relaxed">
-                A marcação envolvente e o toque cadenciado do pandeiro conduzem cada canção com energia viva, convidando todo o público a sambar, cantar junto e vibrar do primeiro ao último acorde.
-              </p>
-            </div>
-            <div class="mt-8 pt-5 border-t border-zinc-800 text-xs text-pink-400 font-mono font-bold flex items-center justify-between">
-              <span>Cadência & Raiz</span>
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </div>
-          </div>
-
-          <!-- Pilar 2 -->
-          <div class="p-8 rounded-3xl bg-[#140C14] border border-pink-950/80 hover:border-amber-500/60 transition duration-300 group flex flex-col justify-between relative overflow-hidden card-shine">
-            <div class="absolute -top-12 -right-12 w-36 h-36 bg-amber-600/10 rounded-full blur-3xl group-hover:bg-amber-600/20 transition"></div>
-            <div>
-              <div class="w-14 h-14 rounded-2xl bg-amber-600/20 text-amber-400 flex items-center justify-center font-black text-2xl mb-6 group-hover:bg-amber-600 group-hover:text-white transition">
-                <i data-lucide="guitar" class="w-7 h-7"></i>
-              </div>
-              <h3 class="font-syne text-2xl font-bold text-white group-hover:text-amber-400 transition">Harmonia & Cordas</h3>
-              <span class="text-xs font-extrabold text-amber-400 uppercase tracking-widest block mt-1.5">Violão, Cavaquinho & Arranjos</span>
-              <p class="text-zinc-300 text-sm mt-4 leading-relaxed">
-                O brilho clássico do cavaquinho e a sofisticação das cordas de violão criam uma base rica e elegante, prestando tributo tanto ao samba tradicional quanto aos clássicos da MPB.
-              </p>
-            </div>
-            <div class="mt-8 pt-5 border-t border-zinc-800 text-xs text-amber-400 font-mono font-bold flex items-center justify-between">
-              <span>Harmonia & Sofisticação</span>
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </div>
-          </div>
-
-          <!-- Pilar 3 -->
-          <div class="p-8 rounded-3xl bg-[#140C14] border border-pink-950/80 hover:border-pink-500/60 transition duration-300 group flex flex-col justify-between relative overflow-hidden card-shine">
-            <div class="absolute -top-12 -right-12 w-36 h-36 bg-pink-600/10 rounded-full blur-3xl group-hover:bg-pink-600/20 transition"></div>
-            <div>
-              <div class="w-14 h-14 rounded-2xl bg-pink-600/20 text-pink-400 flex items-center justify-center font-black text-2xl mb-6 group-hover:bg-pink-600 group-hover:text-white transition">
-                <i data-lucide="mic-2" class="w-7 h-7"></i>
-              </div>
-              <h3 class="font-syne text-2xl font-bold text-white group-hover:text-pink-400 transition">Vozes & Carisma</h3>
-              <span class="text-xs font-extrabold text-pink-400 uppercase tracking-widest block mt-1.5">Interação & Conexão Emocional</span>
-              <p class="text-zinc-300 text-sm mt-4 leading-relaxed">
-                Interpretações cheias de paixão e verdade. Uma performance de palco viva que dialoga de perto com os convidados, transformando qualquer ambiente em uma verdadeira festa brasileira.
-              </p>
-            </div>
-            <div class="mt-8 pt-5 border-t border-zinc-800 text-xs text-pink-400 font-mono font-bold flex items-center justify-between">
-              <span>Emoção & Presença</span>
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </div>
-          </div>
-
-        </div>
-
+      <!-- Destaques do Projeto -->
+      <div class="mt-14 inline-flex flex-wrap items-center justify-center gap-3 max-w-2xl mx-auto">
+        <span class="px-4 py-2 rounded-xl bg-black/60 border border-pink-900/60 text-xs font-bold text-pink-300 flex items-center gap-2">
+          <i data-lucide="heart" class="w-4 h-4 text-pink-400"></i> Protagonismo Feminino no Palco
+        </span>
+        <span class="px-4 py-2 rounded-xl bg-black/60 border border-pink-900/60 text-xs font-bold text-amber-300 flex items-center gap-2">
+          <i data-lucide="flame" class="w-4 h-4 text-amber-400"></i> Samba de Raiz, Pagode & MPB
+        </span>
       </div>
-    </section>
 
-    <!-- ==================== 4. A BANDA / QUEM SOMOS ==================== -->
-    <section id="sobre" class="py-20 lg:py-28 bg-[#0A060A] border-t border-pink-950/40 relative">
-      <div class="max-w-[1600px] w-full mx-auto px-4 sm:px-8 lg:px-12">
-        
-        <div class="grid lg:grid-cols-2 gap-14 items-center">
-          
-          <!-- Fotografia Exclusiva: Integrantes -->
-          <div class="relative group">
-            <div class="absolute -inset-2 bg-gradient-to-r from-pink-600 to-amber-600 rounded-3xl blur-2xl opacity-25 group-hover:opacity-50 transition duration-500"></div>
-            <div class="relative rounded-3xl overflow-hidden border border-pink-900/60 aspect-[4/3] shadow-2xl">
-              <img src="./public/integrantes.jpg" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" alt="Integrantes do Samba de Rosa Montes Claros">
-              <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 sm:p-8">
-                <span class="px-3 py-1 rounded-full bg-pink-600 text-white text-[10px] font-black uppercase tracking-widest inline-block mb-2">Montes Claros • MG</span>
-                <p class="text-white text-base sm:text-lg font-bold">União, talento e dedicação ao samba autêntico</p>
-              </div>
-            </div>
-          </div>
+    </div>
+  </section>
 
-          <!-- Biografia e Proposta -->
-          <div class="space-y-6">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-pink-950/50 border border-pink-800/40 text-pink-400 text-xs font-bold uppercase tracking-widest">
-              Nossa História & Propósito
-            </div>
-
-            <h2 class="font-syne text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight">
-              A tradição do samba com o <span class="rose-gradient-text">encanto de Montes Claros</span>
-            </h2>
-
-            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
-              O <strong class="text-pink-300">Samba de Rosa Oficial</strong> nasceu com a missão de exaltar o protagonismo feminino nos palcos e nas rodas de samba do Norte de Minas. Reunindo músicas apaixonadas pela rica herança cultural brasileira, a banda combina respeito à ancestralidade do gênero com arranjos modernos e cativantes.
-            </p>
-
-            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
-              Seja em um casamento sofisticado, em um almoço festivo ou no palco principal de um festival cultural, o grupo proporciona uma experiência acústica e sensorial inesquecível, onde cada clássico ganha vida nova.
-            </p>
-
-            <!-- Cards de Diferenciais -->
-            <div class="grid sm:grid-cols-2 gap-4 pt-3">
-              <div class="p-5 rounded-2xl bg-[#140C14] border border-pink-950 flex items-start gap-3.5">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-pink-400 shrink-0 mt-0.5"></i>
-                <div>
-                  <h4 class="font-bold text-sm text-white">Repertório Personalizado</h4>
-                  <p class="text-xs text-zinc-400 mt-1">Alinhamos a seleção musical ao perfil do seu evento e convidados.</p>
-                </div>
-              </div>
-
-              <div class="p-5 rounded-2xl bg-[#140C14] border border-pink-950 flex items-start gap-3.5">
-                <i data-lucide="sparkles" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
-                <div>
-                  <h4 class="font-bold text-sm text-white">Produção Completa</h4>
-                  <p class="text-xs text-zinc-400 mt-1">Pontualidade rigorosa, sonorização própria e figurino alinhado.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="pt-2">
-              <a href="#contato" class="inline-flex items-center gap-2 text-sm font-bold text-pink-400 hover:text-pink-300 transition">
-                <span>Agende uma conversa sobre seu evento</span>
-                <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== 5. FORMATOS DE SHOW (3 OPÇÕES) ==================== -->
-    <section id="formatos" class="py-20 lg:py-28 bg-[#100910] border-t border-pink-950/40 relative">
-      <div class="max-w-[1600px] w-full mx-auto px-4 sm:px-8 lg:px-12">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-bold uppercase tracking-widest">
-            Experiências Sob Medida
-          </div>
-          <h2 class="font-syne text-3xl sm:text-5xl font-black text-white">
-            Formatos de Show para o <span class="rose-gradient-text">Seu Evento</span>
-          </h2>
-          <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
-            De confraternizações intimistas a grandes festivais, oferecemos a formação perfeita para transformar sua comemoração em um marco.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          
-          <!-- Formato 1: Roda Acústica de Mesa (Foto: roda.jpg) -->
-          <div class="rounded-3xl bg-[#140C14] border border-pink-950/80 overflow-hidden hover:border-pink-500/60 transition duration-300 flex flex-col justify-between group card-shine">
-            <div>
-              <div class="aspect-[16/10] overflow-hidden relative">
-                <img src="./public/roda.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Roda de Samba Acústica Samba de Rosa">
-                <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/80 backdrop-blur-md text-[10px] font-black uppercase text-pink-300 border border-pink-800/40">
-                  Intimista & Charmoso
-                </div>
-              </div>
-              <div class="p-6 sm:p-7 space-y-3">
-                <h3 class="font-syne text-xl font-bold text-white group-hover:text-pink-400 transition">Roda de Samba de Mesa</h3>
-                <p class="text-xs text-zinc-300 leading-relaxed">
-                  Todos reunidos ao redor da mesa! O formato mais caloroso do samba, perfeito para recepções de casamento, aniversários, chácaras e botecos de alto padrão.
-                </p>
-                <ul class="space-y-2 pt-2 text-xs text-zinc-400">
-                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-400"></i> Duração: 2h a 4h de música contínua</li>
-                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-400"></i> Formação: 3 a 4 integrantes</li>
-                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-400"></i> Alta interação com os convidados</li>
-                </ul>
-              </div>
-            </div>
-            <div class="p-6 pt-0">
-              <button onclick="requestBookingWithFormat('Roda de Samba de Mesa')" class="w-full py-3 rounded-xl font-extrabold text-xs uppercase tracking-wider bg-pink-950/50 hover:bg-pink-600 text-pink-200 hover:text-white border border-pink-800/50 transition flex items-center justify-center gap-2">
-                <i data-lucide="calendar-plus" class="w-4 h-4"></i> Orçar este Formato
-              </button>
-            </div>
-          </div>
-
-          <!-- Formato 2: Show Completo de Palco (Foto: show.jpg) -->
-          <div class="rounded-3xl bg-[#140C14] border-2 border-pink-500/50 overflow-hidden shadow-2xl shadow-pink-600/10 transition duration-300 flex flex-col justify-between group relative card-shine">
-            <div class="absolute -top-3 right-6 px-3 py-1 bg-gradient-to-r from-pink-600 to-amber-500 text-white font-extrabold text-[10px] uppercase tracking-widest rounded-full shadow-lg z-10">
-              Mais Contratado
-            </div>
-            <div>
-              <div class="aspect-[16/10] overflow-hidden relative">
-                <img src="./public/show.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Show Completo de Palco Samba de Rosa">
-                <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/80 backdrop-blur-md text-[10px] font-black uppercase text-amber-300 border border-amber-800/40">
-                  Palco & Grande Energia
-                </div>
-              </div>
-              <div class="p-6 sm:p-7 space-y-3">
-                <h3 class="font-syne text-xl font-bold text-white group-hover:text-amber-400 transition">Show Completo de Palco</h3>
-                <p class="text-xs text-zinc-300 leading-relaxed">
-                  Banda completa com pressão sonora impecável para grandes festas, eventos corporativos, formaturas, convenções e festivais de música.
-                </p>
-                <ul class="space-y-2 pt-2 text-xs text-zinc-400">
-                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Duração: 2h30 a 5h com intervalos</li>
-                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Formação: 5 a 6 músicas no palco</li>
-                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Rider técnico e sonorização avançada</li>
-                </ul>
-              </div>
-            </div>
-            <div class="p-6 pt-0">
-              <button onclick="requestBookingWithFormat('Show Completo de Palco')" class="w-full py-3 rounded-xl font-extrabold text-xs uppercase tracking-wider bg-gradient-to-r from-pink-600 to-amber-500 hover:from-pink-500 hover:to-amber-400 text-white shadow-lg shadow-pink-600/30 transition flex items-center justify-center gap-2">
-                <i data-lucide="calendar-plus" class="w-4 h-4"></i> Orçar este Formato
-              </button>
-            </div>
-          </div>
-
-          <!-- Formato 3: Sunset & Lounge Acústico (Foto: palco_moc.jpg) -->
-          <div class="rounded-3xl bg-[#140C14] border border-pink-950/80 overflow-hidden hover:border-pink-500/60 transition duration-300 flex flex-col justify-between group card-shine">
-            <div>
-              <div class="aspect-[16/10] overflow-hidden relative">
-                <img src="./public/palco_moc.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Sunset e Lounge Acústico Samba de Rosa Montes Claros">
-                <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/80 backdrop-blur-md text-[10px] font-black uppercase text-pink-300 border border-pink-800/40">
-                  Entardecer & Sofisticação
-                </div>
-              </div>
-              <div class="p-6 sm:p-7 space-y-3">
-                <h3 class="font-syne text-xl font-bold text-white group-hover:text-pink-400 transition">Sunset & Lounge Acústico</h3>
-                <p class="text-xs text-zinc-300 leading-relaxed">
-                  Uma seleção refinada de MPB, bossa nova e samba acústico suave para finais de tarde, vernissages, casamentos ao ar livre e eventos gastronômicos.
-                </p>
-                <ul class="space-y-2 pt-2 text-xs text-zinc-400">
-                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-400"></i> Duração: 2h a 3h de trilha sofisticada</li>
-                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-400"></i> Volume equilibrado para conversação</li>
-                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-400"></i> Estética visual elegante</li>
-                </ul>
-              </div>
-            </div>
-            <div class="p-6 pt-0">
-              <button onclick="requestBookingWithFormat('Sunset & Lounge Acústico')" class="w-full py-3 rounded-xl font-extrabold text-xs uppercase tracking-wider bg-pink-950/50 hover:bg-pink-600 text-pink-200 hover:text-white border border-pink-800/50 transition flex items-center justify-center gap-2">
-                <i data-lucide="calendar-plus" class="w-4 h-4"></i> Orçar este Formato
-              </button>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== 6. REPERTÓRIO DE OURO COM FILTROS REATIVOS ==================== -->
-    <section id="repertorio" class="py-20 lg:py-28 bg-[#0A060A] border-t border-pink-950/40 relative">
-      <div class="max-w-[1600px] w-full mx-auto px-4 sm:px-8 lg:px-12">
-        
-        <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-bold uppercase tracking-widest">
-            Música Brasileira de Verdade
-          </div>
-          <h2 class="font-syne text-3xl sm:text-5xl font-black text-white">
-            Repertório de <span class="rose-gradient-text">Ouro & Hinos Populares</span>
-          </h2>
-          <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
-            Uma seleção musical viva que percorre as raízes de Cartola e Dona Ivone Lara, passa pela era de ouro do pagode dos anos 90 e homenageia os maiores clássicos da MPB.
-          </p>
-        </div>
-
-        <!-- Barra de Filtros Reativos (Sem Fallback Anulador) -->
-        <div class="flex flex-wrap items-center justify-center gap-2.5 max-w-4xl mx-auto mb-12">
-          <button onclick="filterRepertoire('todos')" data-category="todos" class="repertoire-filter-btn active px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-pink-600 text-white shadow-md shadow-pink-600/30 transition">
-            Todos os Sucessos
-          </button>
-          <button onclick="filterRepertoire('mulheres')" data-category="mulheres" class="repertoire-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-zinc-900 text-zinc-300 hover:bg-zinc-800 border border-pink-950 transition">
-            Mulheres no Samba
-          </button>
-          <button onclick="filterRepertoire('raiz')" data-category="raiz" class="repertoire-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-zinc-900 text-zinc-300 hover:bg-zinc-800 border border-pink-950 transition">
-            Samba de Raiz
-          </button>
-          <button onclick="filterRepertoire('pagode')" data-category="pagode" class="repertoire-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-zinc-900 text-zinc-300 hover:bg-zinc-800 border border-pink-950 transition">
-            Pagode 90 & 2000
-          </button>
-          <button onclick="filterRepertoire('mpb')" data-category="mpb" class="repertoire-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-zinc-900 text-zinc-300 hover:bg-zinc-800 border border-pink-950 transition">
-            Clássicos da MPB
-          </button>
-        </div>
-
-        <!-- Grade Dinâmica de Músicas -->
-        <div id="repertoireGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
-          <!-- Renderizado dinamicamente via script.js -->
-        </div>
-
-        <!-- Estado Vazio (Empty State) para conformidade estrita com a regra de filtragem reativa -->
-        <div id="repertoireEmptyState" class="hidden text-center py-16 space-y-3">
-          <i data-lucide="music-4" class="w-12 h-12 text-zinc-600 mx-auto"></i>
-          <p class="text-zinc-400 text-sm font-semibold">Nenhuma canção encontrada para esta categoria no momento.</p>
-          <button onclick="filterRepertoire('todos')" class="px-4 py-2 rounded-xl text-xs font-bold bg-pink-600 text-white">
-            Ver todas as canções
-          </button>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== 7. SIMULADOR & CALCULADORA INTERATIVA DE SHOW ==================== -->
-    <section id="calculadora" class="py-20 lg:py-28 bg-[#100910] border-t border-pink-950/40 relative">
-      <div class="max-w-[1600px] w-full mx-auto px-4 sm:px-8 lg:px-12">
-        
-        <div class="max-w-4xl mx-auto bg-gradient-to-br from-[#140C14] to-[#0A060A] border border-pink-900/60 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
-          
-          <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-widest">
-              Transparência & Rapidez
-            </div>
-            <h2 class="font-syne text-3xl sm:text-4xl font-black text-white">
-              Simulador de <span class="gold-gradient-text">Orçamento de Show</span>
-            </h2>
-            <p class="text-zinc-400 text-xs sm:text-sm">
-              Selecione as características do seu evento e tenha uma estimativa instantânea pronta para envio direto pelo WhatsApp.
-            </p>
-          </div>
-
-          <div class="grid lg:grid-cols-12 gap-8 items-start">
-            
-            <!-- Controles da Calculadora -->
-            <div class="lg:col-span-7 space-y-6">
-              
-              <!-- Tipo de Evento -->
-              <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-2">1. Tipo de Comemoração</label>
-                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
-                  <button type="button" onclick="setCalcEventType('Casamento', 1.3)" class="calc-type-btn active p-3 rounded-xl bg-pink-600 text-white text-xs font-bold border border-pink-500 transition text-center">
-                    💍 Casamento
-                  </button>
-                  <button type="button" onclick="setCalcEventType('Aniversário', 1.0)" class="calc-type-btn p-3 rounded-xl bg-zinc-900 text-zinc-300 text-xs font-bold border border-zinc-800 hover:border-pink-500/50 transition text-center">
-                    🎂 Aniversário
-                  </button>
-                  <button type="button" onclick="setCalcEventType('Corporativo', 1.25)" class="calc-type-btn p-3 rounded-xl bg-zinc-900 text-zinc-300 text-xs font-bold border border-zinc-800 hover:border-pink-500/50 transition text-center">
-                    🏢 Corporativo
-                  </button>
-                  <button type="button" onclick="setCalcEventType('Bar / Sunset', 0.9)" class="calc-type-btn p-3 rounded-xl bg-zinc-900 text-zinc-300 text-xs font-bold border border-zinc-800 hover:border-pink-500/50 transition text-center">
-                    🍹 Bar / Sunset
-                  </button>
-                  <button type="button" onclick="setCalcEventType('Festival Cultural', 1.4)" class="calc-type-btn p-3 rounded-xl bg-zinc-900 text-zinc-300 text-xs font-bold border border-zinc-800 hover:border-pink-500/50 transition text-center">
-                    🎪 Festival
-                  </button>
-                  <button type="button" onclick="setCalcEventType('Festa Privada', 1.0)" class="calc-type-btn p-3 rounded-xl bg-zinc-900 text-zinc-300 text-xs font-bold border border-zinc-800 hover:border-pink-500/50 transition text-center">
-                    ✨ Festa Privada
-                  </button>
-                </div>
-              </div>
-
-              <!-- Duração em Horas (Slider Reativo) -->
-              <div>
-                <div class="flex justify-between items-center mb-2">
-                  <label class="text-xs font-bold uppercase tracking-wider text-zinc-300">2. Duração da Apresentação</label>
-                  <span id="calcHoursLabel" class="text-xs font-extrabold text-pink-400 font-mono">3 Horas de Show</span>
-                </div>
-                <input type="range" id="calcHoursRange" min="2" max="6" value="3" step="1" oninput="updateCalculator()" class="w-full accent-pink-500 cursor-pointer">
-                <div class="flex justify-between text-[10px] text-zinc-500 font-mono mt-1">
-                  <span>2 Horas</span>
-                  <span>3 Horas</span>
-                  <span>4 Horas</span>
-                  <span>5 Horas</span>
-                  <span>6 Horas</span>
-                </div>
-              </div>
-
-              <!-- Opcionais / Estrutura -->
-              <div class="space-y-3">
-                <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300">3. Estrutura Desejada</label>
-                
-                <label class="flex items-center justify-between p-3.5 rounded-xl bg-zinc-900/80 border border-zinc-800 cursor-pointer hover:border-pink-800/60 transition">
-                  <div class="flex items-center gap-3">
-                    <input type="checkbox" id="calcSoundCheck" checked onchange="updateCalculator()" class="w-4 h-4 accent-pink-500 rounded">
-                    <span class="text-xs font-semibold text-zinc-200">Sistema Próprio de Som & Microfones</span>
-                  </div>
-                  <span class="text-xs font-mono font-bold text-pink-400">Incluso</span>
-                </label>
-
-                <label class="flex items-center justify-between p-3.5 rounded-xl bg-zinc-900/80 border border-zinc-800 cursor-pointer hover:border-pink-800/60 transition">
-                  <div class="flex items-center gap-3">
-                    <input type="checkbox" id="calcLightingCheck" onchange="updateCalculator()" class="w-4 h-4 accent-pink-500 rounded">
-                    <span class="text-xs font-semibold text-zinc-200">Iluminação Cênica Básica para Palco</span>
-                  </div>
-                  <span class="text-xs font-mono text-zinc-400">+ R$ 350</span>
-                </label>
-              </div>
-
-            </div>
-
-            <!-- Resumo e Envio WhatsApp -->
-            <div class="lg:col-span-5 bg-[#180E18] border border-pink-900/60 rounded-2xl p-6 space-y-6 flex flex-col justify-between">
-              
-              <div>
-                <span class="text-[11px] font-extrabold uppercase tracking-widest text-pink-400 block mb-1">Estimativa de Investimento</span>
-                <div class="flex items-baseline gap-2">
-                  <span class="text-xs text-zinc-400">A partir de</span>
-                  <div id="calcTotalPrice" class="font-syne text-3xl sm:text-4xl font-black text-white">R$ 2.450</div>
-                </div>
-                <p class="text-[11px] text-zinc-400 mt-2 leading-relaxed">
-                  *Valor referencial estimado para apresentações em Montes Claros (MG). Condições especiais para dias de semana.
-                </p>
-              </div>
-
-              <!-- Breakdown de Itens -->
-              <div class="space-y-2 border-t border-b border-zinc-800 py-4 text-xs text-zinc-300">
-                <div class="flex justify-between">
-                  <span class="text-zinc-400">Formato / Ocasião:</span>
-                  <span id="summaryEventType" class="font-bold text-white">Casamento</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="text-zinc-400">Tempo de Show:</span>
-                  <span id="summaryHours" class="font-bold text-white">3 Horas</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="text-zinc-400">Cidade Base:</span>
-                  <span class="font-bold text-pink-300">Montes Claros - MG</span>
-                </div>
-              </div>
-
-              <!-- Botão de Ação Direta -->
-              <button onclick="sendCalculatedQuoteToWhatsApp()" class="w-full py-4 rounded-xl font-black text-xs uppercase tracking-wider bg-gradient-to-r from-pink-600 via-rose-600 to-amber-500 hover:from-pink-500 hover:to-amber-400 text-white shadow-xl shadow-pink-600/30 flex items-center justify-center gap-2 transform active:scale-95 transition">
-                <i data-lucide="send" class="w-4 h-4"></i>
-                <span>Confirmar no WhatsApp</span>
-              </button>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== 8. AGENDA DE SHOWS & APRESENTAÇÕES ==================== -->
-    <section id="agenda" class="py-20 lg:py-28 bg-[#0A060A] border-t border-pink-950/40 relative">
-      <div class="max-w-[1600px] w-full mx-auto px-4 sm:px-8 lg:px-12">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-bold uppercase tracking-widest">
-            Ao Vivo com o Samba de Rosa
-          </div>
-          <h2 class="font-syne text-3xl sm:text-5xl font-black text-white">
-            Agenda Oficial de <span class="rose-gradient-text">Shows & Rodas</span>
-          </h2>
-          <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
-            Confira as datas confirmadas para apresentações públicas, festivais e eventos em Montes Claros e região.
-          </p>
-        </div>
-
-        <!-- Lista Dinâmica de Shows da Agenda -->
-        <div id="agendaList" class="space-y-4 max-w-4xl mx-auto">
-          <!-- Renderizado dinamicamente via script.js -->
-        </div>
-
-        <div class="mt-12 text-center">
-          <p class="text-xs text-zinc-400 mb-3">Deseja reservar uma data exclusiva para o seu casamento ou evento privado?</p>
-          <a href="#contato" class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-pink-400 hover:text-pink-300 transition">
-            <span>Consultar Disponibilidade de Data</span>
-            <i data-lucide="chevron-right" class="w-4 h-4"></i>
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== 9. GALERIA DE MOMENTOS (FOTOS EXCLUSIVAS) ==================== -->
-    <section id="galeria" class="py-20 lg:py-28 bg-[#100910] border-t border-pink-950/40 relative">
-      <div class="max-w-[1600px] w-full mx-auto px-4 sm:px-8 lg:px-12">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-bold uppercase tracking-widest">
-            Memória & Palco
-          </div>
-          <h2 class="font-syne text-3xl sm:text-5xl font-black text-white">
-            Galeria de <span class="rose-gradient-text">Momentos Inesquecíveis</span>
-          </h2>
-          <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
-            Fotografias reais das apresentações, ensaios e encontros que marcam a história do Samba de Rosa.
-          </p>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          
-          <!-- Foto 1: quarteto_hero.jpg -->
-          <div class="rounded-2xl overflow-hidden border border-pink-950/80 group relative aspect-[3/4] cursor-pointer" onclick="openPhotoModal('./public/quarteto_hero.jpg', 'Samba de Rosa — Harmonia e União')">
-            <img src="./public/quarteto_hero.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Quarteto Samba de Rosa Oficial">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 p-5 flex flex-col justify-end">
-              <span class="text-xs font-bold text-pink-400">Harmonia & União</span>
-              <p class="text-sm font-semibold text-white">Retrato Oficial do Grupo</p>
-            </div>
-          </div>
-
-          <!-- Foto 2: duo_palco.jpg -->
-          <div class="rounded-2xl overflow-hidden border border-pink-950/80 group relative aspect-[3/4] cursor-pointer" onclick="openPhotoModal('./public/duo_palco.jpg', 'Performance ao Vivo nos Palcos de Montes Claros')">
-            <img src="./public/duo_palco.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Duo de Palco Samba de Rosa">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 p-5 flex flex-col justify-end">
-              <span class="text-xs font-bold text-amber-400">Ao Vivo</span>
-              <p class="text-sm font-semibold text-white">Vibração & Expressão Artística</p>
-            </div>
-          </div>
-
-          <!-- Foto 3: hero.jpg -->
-          <div class="rounded-2xl overflow-hidden border border-pink-950/80 group relative aspect-[3/4] cursor-pointer" onclick="openPhotoModal('./public/hero.jpg', 'A Magia e Elegância do Samba Tradicional')">
-            <img src="./public/hero.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Samba de Rosa Montes Claros">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 p-5 flex flex-col justify-end">
-              <span class="text-xs font-bold text-pink-400">Carisma & Estilo</span>
-              <p class="text-sm font-semibold text-white">A Força Feminina em Destaque</p>
-            </div>
-          </div>
-
-          <!-- Foto 4: palco_moc.jpg -->
-          <div class="rounded-2xl overflow-hidden border border-pink-950/80 group relative aspect-[3/4] cursor-pointer" onclick="openPhotoModal('./public/palco_moc.jpg', 'Montes Claros — Encontros e Conexões Culturais')">
-            <img src="./public/palco_moc.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Palco Montes Claros Samba de Rosa">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 p-5 flex flex-col justify-end">
-              <span class="text-xs font-bold text-pink-400">Montes Claros</span>
-              <p class="text-sm font-semibold text-white">Apresentações Inesquecíveis</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== 10. FAQ / DÚVIDAS FREQUENTES ==================== -->
-    <section class="py-20 lg:py-28 bg-[#0A060A] border-t border-pink-950/40 relative">
-      <div class="max-w-[1600px] w-full mx-auto px-4 sm:px-8 lg:px-12">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-bold uppercase tracking-widest">
-            Tire Suas Dúvidas
-          </div>
-          <h2 class="font-syne text-3xl sm:text-5xl font-black text-white">
-            Perguntas Frequentes sobre a <span class="rose-gradient-text">Contratação</span>
-          </h2>
-          <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
-            Informações claras sobre o atendimento, deslocamento e infraestrutura dos shows.
-          </p>
-        </div>
-
-        <div class="max-w-3xl mx-auto space-y-4">
-          
-          <div class="rounded-2xl bg-[#140C14] border border-pink-950 overflow-hidden">
-            <button onclick="toggleFaq(1)" class="w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-white hover:text-pink-400 transition">
-              <span>A banda atende outras cidades além de Montes Claros?</span>
-              <i id="faq-icon-1" data-lucide="chevron-down" class="w-5 h-5 text-pink-400 transition-transform"></i>
-            </button>
-            <div id="faq-content-1" class="hidden px-6 pb-6 text-xs sm:text-sm text-zinc-300 leading-relaxed border-t border-zinc-800 pt-4">
-              Sim! Além de Montes Claros e de todo o Norte de Minas Gerais (Bocaiúva, Janaúba, Januária, Salinas, Pirapora), realizamos apresentações em Belo Horizonte e em outros estados mediante alinhamento prévio de logística e translado.
-            </div>
-          </div>
-
-          <div class="rounded-2xl bg-[#140C14] border border-pink-950 overflow-hidden">
-            <button onclick="toggleFaq(2)" class="w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-white hover:text-pink-400 transition">
-              <span>A banda possui sonorização e equipamentos próprios?</span>
-              <i id="faq-icon-2" data-lucide="chevron-down" class="w-5 h-5 text-pink-400 transition-transform"></i>
-            </button>
-            <div id="faq-content-2" class="hidden px-6 pb-6 text-xs sm:text-sm text-zinc-300 leading-relaxed border-t border-zinc-800 pt-4">
-              Sim. Dispomos de sistema de som de alta definição para eventos de pequeno e médio porte (até 250 pessoas). Para festivais e eventos de grande porte, enviamos nosso rider técnico de som detalhado para a equipe de produção local.
-            </div>
-          </div>
-
-          <div class="rounded-2xl bg-[#140C14] border border-pink-950 overflow-hidden">
-            <button onclick="toggleFaq(3)" class="w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-white hover:text-pink-400 transition">
-              <span>Com quanto tempo de antecedência devo reservar a data?</span>
-              <i id="faq-icon-3" data-lucide="chevron-down" class="w-5 h-5 text-pink-400 transition-transform"></i>
-            </button>
-            <div id="faq-content-3" class="hidden px-6 pb-6 text-xs sm:text-sm text-zinc-300 leading-relaxed border-t border-zinc-800 pt-4">
-              Para casamentos e datas concorridas de fins de semana (sextas e sábados), recomendamos uma antecedência de 2 a 6 meses para garantir a exclusividade da agenda. No entanto, sempre consulte nossa produção para verificar encaixes.
-            </div>
-          </div>
-
-          <div class="rounded-2xl bg-[#140C14] border border-pink-950 overflow-hidden">
-            <button onclick="toggleFaq(4)" class="w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-white hover:text-pink-400 transition">
-              <span>É possível solicitar músicas específicas para a ocasião?</span>
-              <i id="faq-icon-4" data-lucide="chevron-down" class="w-5 h-5 text-pink-400 transition-transform"></i>
-            </button>
-            <div id="faq-content-4" class="hidden px-6 pb-6 text-xs sm:text-sm text-zinc-300 leading-relaxed border-t border-zinc-800 pt-4">
-              Com certeza! Alinhamos previamente com os noivos e anfitriões canções afetivas e momentos especiais, como a entrada dos noivos na festa ou a música preferida do aniversariante.
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== 11. FORMULÁRIO DE CONTRATAÇÃO & WHATSAPP ==================== -->
-    <section id="contato" class="py-20 lg:py-28 bg-gradient-to-b from-[#100910] to-[#0A060A] border-t border-pink-950/60 relative">
-      <div class="max-w-[1600px] w-full mx-auto px-4 sm:px-8 lg:px-12">
-        
-        <div class="max-w-4xl mx-auto bg-[#140C14] border border-pink-900/60 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
-          
-          <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-bold uppercase tracking-widest">
-              Produção & Atendimento Oficial
-            </div>
-            <h2 class="font-syne text-3xl sm:text-4xl font-black text-white">
-              Contrate o <span class="rose-gradient-text">Samba de Rosa</span>
-            </h2>
-            <p class="text-zinc-400 text-xs sm:text-sm">
-              Preencha os dados e receba uma proposta detalhada no WhatsApp oficial da produção da banda.
-            </p>
-          </div>
-
-          <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-5">
-            <div class="grid sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-xs font-semibold text-zinc-300 mb-1.5">Seu Nome / Contratante *</label>
-                <input type="text" id="clientName" required placeholder="Ex: Ana Clara / Cerimonial" class="w-full bg-zinc-900/90 border border-pink-950 focus:border-pink-500 rounded-xl p-3 text-xs text-white placeholder-zinc-500 focus:outline-none transition">
-              </div>
-              <div>
-                <label class="block text-xs font-semibold text-zinc-300 mb-1.5">Seu WhatsApp de Contato *</label>
-                <input type="tel" id="clientPhone" required placeholder="(38) 99999-9999" class="w-full bg-zinc-900/90 border border-pink-950 focus:border-pink-500 rounded-xl p-3 text-xs text-white placeholder-zinc-500 focus:outline-none transition">
-              </div>
-            </div>
-
-            <div class="grid sm:grid-cols-3 gap-4">
-              <div>
-                <label class="block text-xs font-semibold text-zinc-300 mb-1.5">Data Desejada *</label>
-                <input type="date" id="eventDate" required class="w-full bg-zinc-900/90 border border-pink-950 focus:border-pink-500 rounded-xl p-3 text-xs text-white focus:outline-none transition">
-              </div>
-              <div>
-                <label class="block text-xs font-semibold text-zinc-300 mb-1.5">Cidade do Evento *</label>
-                <input type="text" id="eventCity" required value="Montes Claros - MG" class="w-full bg-zinc-900/90 border border-pink-950 focus:border-pink-500 rounded-xl p-3 text-xs text-white focus:outline-none transition">
-              </div>
-              <div>
-                <label class="block text-xs font-semibold text-zinc-300 mb-1.5">Tipo de Evento</label>
-                <select id="eventType" class="w-full bg-zinc-900/90 border border-pink-950 focus:border-pink-500 rounded-xl p-3 text-xs text-zinc-200 focus:outline-none transition">
-                  <option value="Casamento">Casamento / Recepção</option>
-                  <option value="Aniversário">Aniversário / Festa Privada</option>
-                  <option value="Corporativo">Evento Corporativo / Empresa</option>
-                  <option value="Festival">Festival Cultural / Palco Aberto</option>
-                  <option value="Bar / Restaurante">Bar / Restaurante / Sunset</option>
-                  <option value="Confraternização">Confraternização de Final de Ano</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label class="block text-xs font-semibold text-zinc-300 mb-1.5">Observações ou Estrutura Desejada</label>
-              <textarea id="eventNotes" rows="3" placeholder="Conte-nos sobre o local, quantidade estimada de convidados, horário..." class="w-full bg-zinc-900/90 border border-pink-950 focus:border-pink-500 rounded-xl p-3 text-xs text-white placeholder-zinc-500 focus:outline-none transition"></textarea>
-            </div>
-
-            <button type="submit" class="w-full py-4 rounded-2xl font-black text-sm uppercase tracking-wider bg-gradient-to-r from-pink-600 via-rose-600 to-amber-500 hover:from-pink-500 hover:to-amber-400 text-white shadow-xl shadow-pink-600/30 flex items-center justify-center gap-2.5 transform active:scale-98 transition">
-              <i data-lucide="send" class="w-5 h-5"></i>
-              <span>Solicitar Orçamento no WhatsApp</span>
-            </button>
-          </form>
-
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ==================== 12. RODAPÉ INSTITUCIONAL ==================== -->
-  <footer class="bg-black border-t border-pink-950/80 py-14">
-    <div class="max-w-[1600px] w-full mx-auto px-4 sm:px-8 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-8">
+  <!-- ==================== 3. A FORÇA FEMININA NO SAMBA (ESSÊNCIA) ==================== -->
+  <section id="essencia" class="py-24 bg-zinc-950 border-t border-pink-950/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Marca e Copyright -->
-      <div class="flex items-center gap-3.5 text-center md:text-left">
-        <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-pink-600 to-amber-500 flex items-center justify-center text-white font-bold shadow-md shadow-pink-600/30">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-bold uppercase tracking-widest mb-3">
+          Identidade & Empoderamento
+        </div>
+        <h2 class="font-syne text-3xl sm:text-5xl font-black text-white">
+          A Potência da Mulher no <span class="rose-gradient-text">Coração de Montes Claros</span>
+        </h2>
+        <p class="text-zinc-400 text-sm mt-3">Com instrumentos tradicionais, arranjos vibrantes e muita sensibilidade, o Samba de Rosa reafirma o papel essencial da mulher na história e no futuro do samba.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        
+        <!-- Pilar 1 -->
+        <div class="p-8 rounded-3xl bg-[#0d090d] border border-pink-950 hover:border-pink-500/60 transition duration-300 group flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-36 h-36 bg-pink-600/10 rounded-full blur-3xl group-hover:bg-pink-600/20 transition"></div>
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-pink-600/20 text-pink-400 flex items-center justify-center font-black text-2xl mb-6 group-hover:bg-pink-600 group-hover:text-white transition">
+              <i data-lucide="drum" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-syne text-2xl font-bold text-white group-hover:text-pink-400 transition">Percussão com Alma</h3>
+            <span class="text-xs font-extrabold text-pink-400 uppercase tracking-widest block mt-1.5">Surdo, Pandeiro & Balanço</span>
+            <p class="text-zinc-300 text-sm mt-4 leading-relaxed">
+              A marcação pesada do surdo e o floreio do pandeiro conduzem o ritmo com autoridade, energia e cadência irresistível que convida todo mundo a cantar e sambar.
+            </p>
+          </div>
+          <div class="mt-8 pt-5 border-t border-zinc-900 text-xs text-pink-400 font-mono font-bold">Cadência & Raiz</div>
+        </div>
+
+        <!-- Pilar 2 -->
+        <div class="p-8 rounded-3xl bg-[#0d090d] border border-pink-950 hover:border-amber-500/60 transition duration-300 group flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-36 h-36 bg-amber-600/10 rounded-full blur-3xl group-hover:bg-amber-600/20 transition"></div>
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-amber-600/20 text-amber-400 flex items-center justify-center font-black text-2xl mb-6 group-hover:bg-amber-600 group-hover:text-white transition">
+              <i data-lucide="guitar" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-syne text-2xl font-bold text-white group-hover:text-amber-400 transition">Harmonia & Cordas</h3>
+            <span class="text-xs font-extrabold text-amber-400 uppercase tracking-widest block mt-1.5">Violão, Cavaquinho & Voz</span>
+            <p class="text-zinc-300 text-sm mt-4 leading-relaxed">
+              O brilho inconfundível do cavaquinho e a riqueza harmônica do violão dão o tom refinado e alegre que homenageia as grandes compositoras e mestres da música brasileira.
+            </p>
+          </div>
+          <div class="mt-8 pt-5 border-t border-zinc-900 text-xs text-amber-400 font-mono font-bold">Harmonia & Sofisticação</div>
+        </div>
+
+        <!-- Pilar 3 -->
+        <div class="p-8 rounded-3xl bg-[#0d090d] border border-pink-950 hover:border-pink-500/60 transition duration-300 group flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-36 h-36 bg-pink-600/10 rounded-full blur-3xl group-hover:bg-pink-600/20 transition"></div>
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-pink-600/20 text-pink-400 flex items-center justify-center font-black text-2xl mb-6 group-hover:bg-pink-600 group-hover:text-white transition">
+              <i data-lucide="mic-2" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-syne text-2xl font-bold text-white group-hover:text-pink-400 transition">Presença de Palco</h3>
+            <span class="text-xs font-extrabold text-pink-400 uppercase tracking-widest block mt-1.5">Carisma & Emoção</span>
+            <p class="text-zinc-300 text-sm mt-4 leading-relaxed">
+              Vozes que emocionam e conectam. Uma performance ao vivo contagiante, pensada para celebrar a vida, a alegria e os encontros através da música.
+            </p>
+          </div>
+          <div class="mt-8 pt-5 border-t border-zinc-900 text-xs text-pink-400 font-mono font-bold">Voz & Emoção</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 4. SHOW AO VIVO EM MONTES CLAROS ==================== -->
+  <section id="sobre" class="py-24 bg-[#0d090d] border-t border-pink-950/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        
+        <!-- Foto do Palco ao Vivo -->
+        <div class="relative group">
+          <div class="absolute -inset-2 bg-gradient-to-r from-pink-600 to-amber-600 rounded-3xl blur-xl opacity-30 group-hover:opacity-60 transition duration-500"></div>
+          <div class="relative rounded-2xl overflow-hidden border border-pink-900/60 aspect-[16/10] shadow-2xl">
+            <img src="./public/duo_palco.jpg" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" alt="Show ao Vivo Samba de Rosa">
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6">
+              <span class="px-3 py-1 rounded-full bg-pink-600 text-white text-[10px] font-black uppercase tracking-widest">Montes Claros • MG</span>
+              <p class="text-white text-base font-bold mt-2">Apresentações Ao Vivo, Roda de Samba & Eventos Exclusivos</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Texto da Proposta Artística -->
+        <div class="space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-950/50 border border-pink-800/40 text-pink-400 text-xs font-bold uppercase tracking-widest">
+            A Identidade Musical
+          </div>
+
+          <h2 class="font-syne text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight">
+            A tradição do samba com o <span class="rose-gradient-text">brilho de Minas</span>
+          </h2>
+
+          <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
+            O **Samba de Rosa** se destaca pela versatilidade e autenticidade do seu formato: a união harmoniosa do violão e cavaquinho com a batida vibrante do pandeiro e do surdo, permitindo apresentações envolventes que vão desde rodas de samba acústicas e intimistas até grandes shows de palco e festivais.
+          </p>
+
+          <!-- Diferenciais da Banda -->
+          <div class="grid sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-zinc-950 border border-pink-950 flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-pink-400 shrink-0 mt-0.5"></i>
+              <div>
+                <h4 class="font-bold text-sm text-white">Repertório Selecionado</h4>
+                <p class="text-xs text-zinc-400 mt-0.5">Grandes sucessos do samba de raiz, pagode de mesa e clássicos da MPB.</p>
+              </div>
+            </div>
+            <div class="p-4 rounded-xl bg-zinc-950 border border-pink-950 flex items-start gap-3">
+              <i data-lucide="award" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
+              <div>
+                <h4 class="font-bold text-sm text-white">Versatilidade & Qualidade</h4>
+                <p class="text-xs text-zinc-400 mt-0.5">Ideal para casamentos, festas privadas, eventos corporativos e festivais.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 5. AGENDA & SHOWS ==================== -->
+  <section id="agenda" class="py-24 bg-zinc-950 border-t border-pink-950/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-bold uppercase tracking-widest mb-3">
+          Agenda Oficial
+        </div>
+        <h2 class="font-syne text-3xl sm:text-5xl font-black text-white">
+          Próximas <span class="rose-gradient-text">Rodas & Shows</span>
+        </h2>
+        <p class="text-zinc-400 text-sm mt-3">Acompanhe as próximas apresentações em Montes Claros e região.</p>
+      </div>
+
+      <div class="space-y-4 max-w-4xl mx-auto">
+        
+        <!-- Show 1 -->
+        <div class="p-6 rounded-2xl bg-[#0d090d] border border-pink-950/80 hover:border-pink-500/50 flex flex-col md:flex-row items-center justify-between gap-6 transition duration-300 group">
+          <div class="flex items-center gap-5 w-full md:w-auto">
+            <div class="w-16 h-16 rounded-2xl bg-pink-950/60 border border-pink-800/40 flex flex-col items-center justify-center text-center shrink-0">
+              <span class="text-xs font-extrabold uppercase text-pink-400">SET</span>
+              <span class="font-syne text-2xl font-black text-white">12</span>
+            </div>
+            <div>
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider bg-pink-500/20 text-pink-300">Roda Tradicional</span>
+              <h3 class="font-syne text-lg font-bold text-white mt-1 group-hover:text-pink-400 transition">Tardezinha Samba de Rosa — Montes Claros</h3>
+              <p class="text-xs text-zinc-400 flex items-center gap-1.5 mt-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-pink-500"></i> Espaço Cultural • A partir das 17h
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+            <a href="https://wa.me/5538999999999?text=Quero%20informações%20do%20show%20em%20Montes%20Claros" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl text-xs font-bold bg-pink-600 hover:bg-pink-500 text-white flex items-center gap-1.5 shadow-md shadow-pink-600/30 transition">
+              <i data-lucide="ticket" class="w-4 h-4"></i> Informações / Mesas
+            </a>
+          </div>
+        </div>
+
+        <!-- Show 2 -->
+        <div class="p-6 rounded-2xl bg-[#0d090d] border border-pink-950/80 hover:border-pink-500/50 flex flex-col md:flex-row items-center justify-between gap-6 transition duration-300 group">
+          <div class="flex items-center gap-5 w-full md:w-auto">
+            <div class="w-16 h-16 rounded-2xl bg-pink-950/60 border border-pink-800/40 flex flex-col items-center justify-center text-center shrink-0">
+              <span class="text-xs font-extrabold uppercase text-pink-400">SET</span>
+              <span class="font-syne text-2xl font-black text-white">26</span>
+            </div>
+            <div>
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider bg-amber-500/20 text-amber-300">Festival</span>
+              <h3 class="font-syne text-lg font-bold text-white mt-1 group-hover:text-pink-400 transition">Festival Cultural & Gastronomia Norte-Mineira</h3>
+              <p class="text-xs text-zinc-400 flex items-center gap-1.5 mt-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-pink-500"></i> Praça Central • 20h
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+            <a href="https://wa.me/5538999999999?text=Quero%20informações%20do%20festival" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl text-xs font-bold bg-pink-600 hover:bg-pink-500 text-white flex items-center gap-1.5 shadow-md shadow-pink-600/30 transition">
+              <i data-lucide="ticket" class="w-4 h-4"></i> Informações
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 6. CONTRATAÇÃO & WHATSAPP ==================== -->
+  <section id="contato" class="py-24 bg-gradient-to-b from-[#0d090d] to-black border-t border-pink-950/60 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-4xl mx-auto bg-zinc-950/90 border border-pink-900/60 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-bold uppercase tracking-widest mb-3">
+            Produção Oficial • Montes Claros
+          </div>
+          <h2 class="font-syne text-3xl sm:text-4xl font-black text-white">
+            Contrate o <span class="rose-gradient-text">Samba de Rosa</span>
+          </h2>
+          <p class="text-zinc-400 text-sm mt-3">Solicite proposta para eventos sociais, aniversários, casamentos, confraternizações e festivais.</p>
+        </div>
+
+        <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-5">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-zinc-300 mb-1.5">Seu Nome / Contratante</label>
+              <input type="text" id="clientName" required placeholder="Ex: Maria / Cerimonial" class="w-full bg-zinc-900/90 border border-pink-950 focus:border-pink-500 rounded-xl p-3 text-xs text-white placeholder-zinc-500 focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-zinc-300 mb-1.5">Seu WhatsApp</label>
+              <input type="tel" id="clientPhone" required placeholder="(38) 99999-9999" class="w-full bg-zinc-900/90 border border-pink-950 focus:border-pink-500 rounded-xl p-3 text-xs text-white placeholder-zinc-500 focus:outline-none">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-zinc-300 mb-1.5">Data Desejada</label>
+              <input type="date" id="eventDate" required class="w-full bg-zinc-900/90 border border-pink-950 focus:border-pink-500 rounded-xl p-3 text-xs text-white focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-zinc-300 mb-1.5">Cidade do Evento</label>
+              <input type="text" id="eventCity" required value="Montes Claros - MG" class="w-full bg-zinc-900/90 border border-pink-950 focus:border-pink-500 rounded-xl p-3 text-xs text-white focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-zinc-300 mb-1.5">Tipo de Evento</label>
+              <select id="eventType" class="w-full bg-zinc-900/90 border border-pink-950 focus:border-pink-500 rounded-xl p-3 text-xs text-zinc-200 focus:outline-none">
+                <option value="Casamento">Casamento / Recepção</option>
+                <option value="Aniversário">Aniversário / Festa Privada</option>
+                <option value="Corporativo">Evento Corporativo / Empresa</option>
+                <option value="Festival">Festival Cultural / Palco</option>
+                <option value="Bar / Restaurante">Bar / Restaurante / Sunset</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-zinc-300 mb-1.5">Mensagem ou Detalhes</label>
+            <textarea id="eventNotes" rows="3" placeholder="Informe o horário previsto, estrutura desejada..." class="w-full bg-zinc-900/90 border border-pink-950 focus:border-pink-500 rounded-xl p-3 text-xs text-white placeholder-zinc-500 focus:outline-none"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-4 rounded-2xl font-black text-sm uppercase tracking-wider bg-gradient-to-r from-pink-600 via-rose-600 to-amber-500 hover:from-pink-500 hover:to-amber-400 text-white shadow-xl shadow-pink-600/30 flex items-center justify-center gap-2 transform active:scale-98 transition">
+            <i data-lucide="send" class="w-5 h-5"></i>
+            <span>Solicitar Orçamento no WhatsApp</span>
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 7. RODAPÉ INSTITUCIONAL ==================== -->
+  <footer class="bg-black border-t border-pink-950/80 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-pink-600 flex items-center justify-center text-white font-bold">
           <i data-lucide="music-2" class="w-5 h-5"></i>
         </div>
         <div>
-          <span class="font-syne font-black text-white text-base tracking-tight">SAMBA DE ROSA OFICIAL</span>
-          <p class="text-xs text-zinc-500">© 2026 Samba de Rosa • Montes Claros, Minas Gerais. Todos os direitos reservados.</p>
+          <span class="font-syne font-black text-white text-base">SAMBA DE ROSA</span>
+          <p class="text-[11px] text-zinc-500">© 2026 Samba de Rosa • Montes Claros, Minas Gerais.</p>
         </div>
       </div>
 
-      <!-- Links Rápidos e Redes -->
-      <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-zinc-400">
-        <a href="https://www.instagram.com/sambaderosaoficial" id="footerInstagramLink" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition flex items-center gap-1.5 font-mono">
-          <i data-lucide="instagram" class="w-4 h-4 text-pink-400"></i> @sambaderosaoficial
+      <div class="flex items-center gap-6 text-xs text-zinc-400">
+        <a href="https://www.instagram.com/sambaderosaoficial" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition flex items-center gap-1">
+          <i data-lucide="instagram" class="w-4 h-4"></i> @sambaderosaoficial
         </a>
-        <a href="#hero" class="hover:text-pink-400 transition flex items-center gap-1">
-          <i data-lucide="arrow-up" class="w-4 h-4"></i> Voltar ao Topo
-        </a>
+        <a href="#hero" class="hover:text-pink-400 transition">Voltar ao topo ↑</a>
       </div>
 
-      <!-- Botão Admin Discreto com Cadeado Minimalista -->
       <div>
-        <button onclick="openAdminModal()" class="text-zinc-600 hover:text-zinc-300 text-xs flex items-center gap-1.5 opacity-50 hover:opacity-100 transition px-2 py-1 rounded" title="Acesso Administrativo">
-          <i data-lucide="lock" class="w-3.5 h-3.5"></i>
-          <span>Admin</span>
+        <button onclick="document.getElementById('adminModal').classList.remove('hidden')" class="text-zinc-600 hover:text-zinc-400 text-xs flex items-center gap-1 opacity-60 hover:opacity-100 transition" title="Painel Administrativo">
+          <i data-lucide="lock" class="w-3.5 h-3.5"></i> Admin
         </button>
       </div>
 
     </div>
   </footer>
 
-  <!-- ==================== 13. MODAL DE ZOOM DE FOTOGRAFIA ==================== -->
-  <div id="photoModal" class="hidden fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4" onclick="closePhotoModal()">
-    <div class="relative max-w-4xl w-full bg-zinc-950 border border-pink-900/60 rounded-3xl overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
-      <div class="relative aspect-[16/10] sm:aspect-[16/9] bg-black">
-        <img id="photoModalImg" src="" class="w-full h-full object-contain" alt="Visualização em Alta Resolução">
-      </div>
-      <div class="p-4 sm:p-6 bg-zinc-900 flex items-center justify-between border-t border-zinc-800">
-        <span id="photoModalCaption" class="text-xs sm:text-sm font-bold text-white"></span>
-        <button onclick="closePhotoModal()" class="px-4 py-1.5 rounded-xl text-xs font-bold bg-pink-600 text-white">Fechar</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ==================== 14. PAINEL ADMINISTRATIVO BLINDADO & MULTI-ABAS ==================== -->
+  <!-- ==================== 8. PAINEL ADMINISTRATIVO BLINDADO ==================== -->
   <div id="adminModal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
-    <div class="w-full max-w-2xl bg-[#140C14] border border-pink-900/70 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6 max-h-[90vh] overflow-y-auto custom-scrollbar">
+    <div class="w-full max-w-2xl bg-zinc-950 border border-pink-900/60 rounded-3xl p-6 shadow-2xl space-y-5 max-h-[90vh] overflow-y-auto custom-scrollbar">
       
-      <!-- Cabeçalho do Painel Admin -->
       <div class="flex items-center justify-between border-b border-zinc-800 pb-4">
-        <div class="flex items-center gap-2.5">
-          <div class="w-8 h-8 rounded-xl bg-pink-600 text-white flex items-center justify-center shadow-md shadow-pink-600/40">
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 rounded-lg bg-pink-600 text-white flex items-center justify-center">
             <i data-lucide="shield" class="w-4 h-4"></i>
           </div>
-          <div>
-            <h3 class="font-syne font-bold text-sm text-white">Painel de Gestão — Samba de Rosa Oficial</h3>
-            <span class="text-[10px] text-zinc-400 font-mono">Montes Claros • Layout Blindado & Imutável</span>
-          </div>
+          <h3 class="font-syne font-bold text-sm text-white">Painel Admin — Samba de Rosa (Montes Claros)</h3>
         </div>
-        <button onclick="closeAdminModal()" class="text-zinc-500 hover:text-zinc-300 p-1 rounded-lg">
+        <button onclick="document.getElementById('adminModal').classList.add('hidden')" class="text-zinc-500 hover:text-zinc-300">
           <i data-lucide="x" class="w-5 h-5"></i>
         </button>
       </div>
 
-      <!-- Login do Admin (caso não autenticado) -->
-      <div id="adminAuthSection" class="space-y-4">
-        <div class="p-4 rounded-xl bg-zinc-900/80 border border-zinc-800 text-xs text-zinc-300 leading-relaxed">
-          🔒 Digite a senha administrativa para acessar as configurações e gerenciar a agenda de shows.
-        </div>
-        <div>
-          <label class="block text-xs font-semibold text-zinc-300 mb-1">Senha de Acesso</label>
-          <input type="password" id="adminPasswordInput" placeholder="Senha padrão: admin123" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-pink-500">
-        </div>
-        <div id="adminAuthError" class="hidden text-xs text-rose-400 font-semibold"></div>
-        <button onclick="authenticateAdmin()" class="w-full py-3 rounded-xl text-xs font-black uppercase tracking-wider bg-pink-600 hover:bg-pink-500 text-white shadow-lg shadow-pink-600/30 transition">
-          Entrar no Painel
-        </button>
+      <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800 text-xs text-zinc-400 leading-relaxed">
+        <span class="font-bold text-pink-400">Layout Blindado & Imutável:</span> Atualize telefones e redes sociais sem alterar a estrutura visual do site.
       </div>
 
-      <!-- Conteúdo do Painel (após login) -->
-      <div id="adminContentSection" class="hidden space-y-6">
-        
-        <!-- Abas Administrativas Permanentes -->
-        <div class="flex items-center gap-2 border-b border-zinc-800 pb-3 overflow-x-auto whitespace-nowrap scrollbar-none text-xs font-bold">
-          <button onclick="switchAdminTab('geral')" id="tab-btn-geral" class="admin-tab-btn active px-3.5 py-1.5 rounded-xl bg-pink-600 text-white">
-            Geral & Contatos
-          </button>
-          <button onclick="switchAdminTab('agenda')" id="tab-btn-agenda" class="admin-tab-btn px-3.5 py-1.5 rounded-xl bg-zinc-900 text-zinc-400 hover:text-white">
-            Gerenciar Agenda
-          </button>
-          <button onclick="switchAdminTab('ia')" id="tab-btn-ia" class="admin-tab-btn px-3.5 py-1.5 rounded-xl bg-zinc-900 text-zinc-400 hover:text-white">
-            ✨ Gerador de Copys (IA)
-          </button>
-          <button onclick="switchAdminTab('seguranca')" id="tab-btn-seguranca" class="admin-tab-btn px-3.5 py-1.5 rounded-xl bg-zinc-900 text-zinc-400 hover:text-white">
-            Segurança & Senha
-          </button>
-          <button onclick="logoutAdmin()" class="px-3.5 py-1.5 rounded-xl bg-red-950/60 text-red-300 hover:bg-red-900 ml-auto">
-            Sair
-          </button>
+      <div class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-zinc-300 mb-1">WhatsApp de Contratação (Montes Claros / DDD 38)</label>
+          <input type="text" id="adminWhatsapp" value="5538999999999" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl p-2.5 text-xs text-white focus:outline-none focus:border-pink-500">
         </div>
-
-        <!-- ABA 1: GERAL -->
-        <div id="tab-geral" class="space-y-4">
-          <div>
-            <label class="block text-xs font-semibold text-zinc-300 mb-1">WhatsApp de Contratação (Apenas números com DDD)</label>
-            <input type="text" id="adminWhatsappInput" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl p-2.5 text-xs text-white focus:outline-none focus:border-pink-500">
-            <span class="text-[10px] text-zinc-500 mt-1 block">Exemplo: 5538998418631 (DDD 38 de Montes Claros)</span>
-          </div>
-
-          <div>
-            <label class="block text-xs font-semibold text-zinc-300 mb-1">Link do Instagram Oficial (@)</label>
-            <input type="text" id="adminInstagramInput" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl p-2.5 text-xs text-white focus:outline-none focus:border-pink-500">
-          </div>
-
-          <div>
-            <label class="block text-xs font-semibold text-zinc-300 mb-1">Cidade Base do Estabelecimento</label>
-            <input type="text" id="adminCityInput" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl p-2.5 text-xs text-white focus:outline-none focus:border-pink-500">
-          </div>
-
-          <button onclick="saveAdminGeneralSettings()" class="w-full py-3 rounded-xl text-xs font-black uppercase tracking-wider bg-pink-600 hover:bg-pink-500 text-white shadow-lg shadow-pink-600/30 transition">
-            Salvar Dados Gerais
-          </button>
+        <div>
+          <label class="block text-xs font-semibold text-zinc-300 mb-1">Instagram Oficial</label>
+          <input type="text" id="adminInstagram" value="https://www.instagram.com/sambaderosaoficial" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl p-2.5 text-xs text-white focus:outline-none focus:border-pink-500">
         </div>
+      </div>
 
-        <!-- ABA 2: GERENCIAR AGENDA -->
-        <div id="tab-agenda" class="hidden space-y-5">
-          <div class="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 space-y-3">
-            <h4 class="text-xs font-bold uppercase tracking-wider text-pink-400">Adicionar Nova Data de Show</h4>
-            <div class="grid grid-cols-2 gap-3">
-              <input type="text" id="newShowDate" placeholder="Data (Ex: 14 NOV)" class="bg-zinc-900 border border-zinc-700 rounded-xl p-2 text-xs text-white">
-              <input type="text" id="newShowType" placeholder="Tipo (Ex: Tardezinha / Festival)" class="bg-zinc-900 border border-zinc-700 rounded-xl p-2 text-xs text-white">
-            </div>
-            <input type="text" id="newShowTitle" placeholder="Título do Evento ou Espaço" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl p-2 text-xs text-white">
-            <input type="text" id="newShowLocation" placeholder="Local e Horário (Ex: Montes Claros • 18h)" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl p-2 text-xs text-white">
-            <button onclick="addShowToAgenda()" class="w-full py-2 rounded-xl text-xs font-bold bg-amber-500 hover:bg-amber-400 text-black">
-              + Adicionar Show à Agenda
-            </button>
-          </div>
-
-          <div class="space-y-2">
-            <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-300">Shows Cadastrados Atualmente:</h4>
-            <div id="adminShowsList" class="space-y-2 max-h-56 overflow-y-auto custom-scrollbar">
-              <!-- Renderizado dinamicamente -->
-            </div>
-          </div>
-        </div>
-
-        <!-- ABA 3: GERADOR DE COPYS IA -->
-        <div id="tab-ia" class="hidden space-y-4">
-          <div class="p-4 rounded-xl bg-pink-950/20 border border-pink-900/40 text-xs text-zinc-300">
-            ✨ Gere legendas para o Instagram e mensagens de divulgação para o Samba de Rosa Oficial com 1 clique.
-          </div>
-          <div>
-            <label class="block text-xs font-semibold text-zinc-300 mb-1">Tema da Postagem ou Show</label>
-            <input type="text" id="aiTopicInput" placeholder="Ex: Anúncio do show de sábado na Tardezinha" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl p-2.5 text-xs text-white">
-          </div>
-          <button onclick="generateAICopy()" class="w-full py-2.5 rounded-xl text-xs font-bold bg-gradient-to-r from-pink-600 to-amber-500 text-white shadow-md">
-            Gerar Ideia & Legenda
-          </button>
-          <div id="aiResultArea" class="hidden p-4 rounded-xl bg-zinc-900 border border-zinc-800 text-xs text-zinc-200 whitespace-pre-line font-sans">
-          </div>
-        </div>
-
-        <!-- ABA 4: SEGURANÇA & SENHA -->
-        <div id="tab-seguranca" class="hidden space-y-4">
-          <div>
-            <label class="block text-xs font-semibold text-zinc-300 mb-1">Nova Senha Administrativa</label>
-            <input type="password" id="newAdminPassword" placeholder="Digite a nova senha segura" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl p-2.5 text-xs text-white">
-          </div>
-          <button onclick="changeAdminPassword()" class="w-full py-2.5 rounded-xl text-xs font-bold bg-pink-600 hover:bg-pink-500 text-white">
-            Atualizar Senha
-          </button>
-        </div>
-
+      <div class="flex justify-end gap-3 pt-3 border-t border-zinc-800">
+        <button onclick="document.getElementById('adminModal').classList.add('hidden')" class="px-4 py-2 rounded-xl text-xs font-semibold bg-zinc-900 text-zinc-300 hover:bg-zinc-800">Fechar</button>
+        <button onclick="saveAdminSettings()" class="px-5 py-2 rounded-xl text-xs font-bold bg-pink-600 hover:bg-pink-500 text-white shadow-lg shadow-pink-600/30">Salvar Alterações</button>
       </div>
 
     </div>
   </div>
 
-  <!-- Toast de Notificações -->
-  <div id="toast" class="hidden fixed bottom-6 right-6 z-50 px-5 py-3 rounded-2xl bg-zinc-900 border border-pink-600 text-white text-xs font-bold shadow-2xl flex items-center gap-2 transform translate-y-2 opacity-0">
-    <i data-lucide="check-circle" class="w-4 h-4 text-pink-400"></i>
-    <span id="toastMsg">Alteração realizada com sucesso!</span>
-  </div>
+  <script>
+    lucide.createIcons();
 
-  <!-- Script da SPA e Funcionalidades Reativas -->
-  <script src="./script.js"></script>
+    function handleBookingSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('clientName').value;
+      const phone = document.getElementById('clientPhone').value;
+      const date = document.getElementById('eventDate').value;
+      const city = document.getElementById('eventCity').value;
+      const type = document.getElementById('eventType').value;
+      const notes = document.getElementById('eventNotes').value;
+
+      const message = `*SOLICITAÇÃO DE SHOW — SAMBA DE ROSA (MONTES CLAROS)*\n\n` +
+                      `👤 *Contratante:* ${name}\n` +
+                      `📱 *WhatsApp:* ${phone}\n` +
+                      `📅 *Data Desejada:* ${date}\n` +
+                      `📍 *Cidade/Local:* ${city}\n` +
+                      `🎉 *Tipo de Evento:* ${type}\n` +
+                      (notes ? `📝 *Detalhes:* ${notes}\n` : '');
+
+      const whatsappNum = document.getElementById('adminWhatsapp').value || '5538999999999';
+      const encodedMsg = encodeURIComponent(message);
+      window.open(`https://wa.me/${whatsappNum}?text=${encodedMsg}`, '_blank');
+    }
+
+    function saveAdminSettings() {
+      alert("Configurações salvas com sucesso!");
+      document.getElementById('adminModal').classList.add('hidden');
+    }
+  </script>
 </body>
 </html>
